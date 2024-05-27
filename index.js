@@ -116,6 +116,6 @@ app.delete('/requests/:id', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
